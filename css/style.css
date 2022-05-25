@@ -1,0 +1,89 @@
+:root {
+
+--branco: hsl(0, 0%, 100%);
+--Lightgrey: hsl(217, 12%, 63%);
+--MediumGrey: hsl(216, 12%, 54%);
+--DarkBlue: hsl(212, 20%, 13%);
+--VeryDarkBlue: hsl(216, 12%, 8%);
+
+}
+
+*>a {
+    color: black;
+    cursor: pointer;
+    text-decoration: underline blue;
+    padding: 3px;
+    background-color:var(--branco);
+    border-radius: 5px;
+}
+
+body {
+    background-color: var(--VeryDarkBlue);
+}
+
+main {
+    max-width: 100%;
+    color:var(--DarkBlue)
+    
+}
+
+main>.cartão-pesquisa {
+    text-align: left;
+
+}
+
+main>.cartão-pesquisa > img {
+    background-color: aliceblue;
+    padding: 7px;
+    border-radius: 45px;
+
+}
+
+main>.cartão-agradecimento {
+    text-align: left;
+
+}
+
+.cartões {
+    background-color:var(--DarkBlue);
+    margin: 50px auto;
+    width: 65vw;
+    padding: 30px;
+    border-radius: 10px;
+
+}
+
+button {
+    background-color: hsl(25, 97%, 53%);
+    display: flex;
+    float: left;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1, p {
+    color: #fff;
+}
+
+
+
+.hide {
+    display: none;
+}
+
+.ativo {
+    display: block
+}
+
+footer {
+    background-color: #575757;
+}
+
+.attribution {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
