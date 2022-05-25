@@ -1,89 +1,114 @@
 :root {
 
---branco: hsl(0, 0%, 100%);
---Lightgrey: hsl(217, 12%, 63%);
---MediumGrey: hsl(216, 12%, 54%);
---DarkBlue: hsl(212, 20%, 13%);
---VeryDarkBlue: hsl(216, 12%, 8%);
+    --branco: hsl(0, 0%, 100%);
+    --Lightgrey: hsla(218, 7%, 48%, 0.781);
+    --MediumGrey: hsla(220, 10%, 28%, 0.248);
+    --DarkBlue: hsl(212, 20%, 13%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+
+
+    font-family: 'Overpass', sans-serif;
 
 }
 
 *>a {
     color: black;
     cursor: pointer;
-    text-decoration: underline blue;
+    text-decoration: none;
     padding: 3px;
-    background-color:var(--branco);
     border-radius: 5px;
 }
 
 body {
     background-color: var(--VeryDarkBlue);
+    max-width: 100%;
+
 }
 
 main {
-    max-width: 100%;
-    color:var(--DarkBlue)
+    
+    color: var(--branco);
+    font-size: 0.75em;
+    Display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ul {
+
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding-inline-start: 0px;
+    margin: 10px;
     
 }
 
-main>.cartão-pesquisa {
-    text-align: left;
-
-}
-
-main>.cartão-pesquisa > img {
-    background-color: aliceblue;
-    padding: 7px;
-    border-radius: 45px;
-
-}
-
-main>.cartão-agradecimento {
-    text-align: left;
+li {
+    list-style-type: none;
+    padding: 15px;
+    background-color: var(--MediumGrey);
+    border-radius: 90px;
+    margin-right: 10px;
+    height: 12px;
+    width: 12px;
 
 }
 
 .cartões {
-    background-color:var(--DarkBlue);
-    margin: 50px auto;
-    width: 65vw;
+    background-color: var(--DarkBlue);
+    max-width: 250px;
+    max-height: 280px;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 25px;
+    margin-top: 50px;
 
 }
 
-button {
+.cartão-pesquisa>img {
+    background-color: var(--MediumGrey);
+    padding: 7px;
+    border-radius: 45px;
+    text-align: left;
+}
+
+.cartão-agradecimento {
+    text-align: left;
+
+}
+
+.cartão-pesquisa > button {
     background-color: hsl(25, 97%, 53%);
     display: flex;
     float: left;
     margin: auto;
     padding: 10px;
-    border-radius: 10px;
-    text-align: center;
+    border-radius: 50px;
+    width:max-content;
+    border: none;
+    color: #575757
 }
 
-h1, p {
-    color: #fff;
+.cartão-pesquisa>button:hover {
+    background-color: var(--branco);
+
 }
 
-
-
-.hide {
+/* .hide {
     display: none;
-}
+} */
 
 .ativo {
     display: block
 }
 
 footer {
+    margin-top: 100px;
     background-color: #575757;
-}
-
-.attribution {
+    font-size: 0.7em;
     text-align: center;
     text-decoration: none;
     color: rgb(0, 0, 0);
-
 }
