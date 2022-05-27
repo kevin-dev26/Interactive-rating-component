@@ -26,7 +26,7 @@ body {
 }
 
 main {
-    
+
     color: var(--branco);
     font-size: 0.75em;
     Display: flex;
@@ -43,7 +43,7 @@ ul {
     align-items: center;
     padding-inline-start: 0px;
     margin: 10px;
-    
+
 }
 
 li {
@@ -79,16 +79,19 @@ li {
 
 }
 
-.cartão-pesquisa > button {
-    background-color: hsl(25, 97%, 53%);
+.cartão-pesquisa>button {
     display: flex;
-    float: left;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    background-color: hsl(25, 97%, 53%);
     padding: 10px;
     border-radius: 50px;
-    width:max-content;
     border: none;
-    color: #575757
+    color: #575757;
+
+
+
 }
 
 .cartão-pesquisa>button:hover {
@@ -96,9 +99,9 @@ li {
 
 }
 
-/* .hide {
+.hide {
     display: none;
-} */
+}
 
 .ativo {
     display: block
